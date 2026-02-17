@@ -23,3 +23,10 @@ python -m venv venv
 # Activate venv (Windows: .\venv\Scripts\activate | Mac: source venv/bin/activate)
 pip install fastapi uvicorn[standard] psutil
 uvicorn main:app --reload
+
+### 2. Frontend Setup
+```bash
+# From the SystemScope root directory
+cd frontend
+npm install
+npm run dev
