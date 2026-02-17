@@ -1,6 +1,6 @@
 # SystemScope Pro: Real-Time Observability Engine 🚀
 
-SystemScope is a full-stack observability platform that provides real-time telemetry and historical health analysis for system resources. Built with a focus on high availability and low-latency data streaming, it mimics industry-standard tools like Azure Monitor and Datadog.
+SystemScope is a full-stack observability platform designed to monitor system health and reliability in real-time. Built with a focus on high availability and low-latency data streaming, it mimics industry-standard tools like Azure Monitor.
 
 ## 🛠️ System Architecture
 - **Metrics Engine:** Python-based collector using `psutil` to capture CPU, RAM, Disk I/O, and Network Latency.
@@ -18,15 +18,24 @@ SystemScope is a full-stack observability platform that provides real-time telem
 
 ### 1. Backend Setup
 ```bash
+# Navigate to backend directory
 cd backend
+
+# Create and activate virtual environment
 python -m venv venv
-# Activate venv (Windows: .\venv\Scripts\activate | Mac: source venv/bin/activate)
+# Windows: .\venv\Scripts\activate | Mac/Linux: source venv/bin/activate
+
+# Install dependencies
 pip install fastapi uvicorn[standard] psutil
+
+# Start the metrics engine
 uvicorn main:app --reload
 
-### 2. Frontend Setup
-```bash
-# From the SystemScope root directory
+# Navigate to frontend directory
 cd frontend
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
