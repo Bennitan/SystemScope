@@ -16,7 +16,7 @@ SystemScope is a full-stack observability platform designed to monitor system he
 
 ## 🚀 Getting Started
 
-### 1. Backend Setup
+### 1. Backend & Frontend Setup
 ```bash
 # Navigate to backend directory
 cd backend
